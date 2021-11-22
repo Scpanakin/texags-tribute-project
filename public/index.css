@@ -1,0 +1,235 @@
+/* general styling */
+
+body{
+    background-color:rgb(192, 196, 192);
+}
+#pagetitle{
+    margin-top: 50px;
+    text-align: center;
+    color:#500000;
+    font-family: 'Staatliches', cursive;
+    font-style:bold;
+    font-size: 100px;
+}
+
+button{
+    background-color: rgb(80,0,0);
+    width:18.5%;
+    height: 100%;
+    color: rgb(192, 196, 192);
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    font-size: 25px;
+}
+
+.headerbtns{
+    display: inline-block;
+    height:100px;
+    width: 100%;
+    vertical-align: top;
+}
+
+li{
+    line-height: 1.75;
+    font-family: 'Staatliches', cursive;
+    font-size: 18px;
+}
+.center{
+   margin-top: -10px;
+   display: block; 
+   margin-left: auto;
+   margin-right: auto;
+}
+ul{
+    margin-top: 50px;
+}
+
+.navwrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 5px;
+}
+
+/* main page */
+
+.sectionhead{
+    text-align: center;
+    color:#500000;
+    font-family: 'Staatliches', cursive;
+    font-style:bold;
+    font-size: 50px;
+}
+
+
+.basicinfo{
+    display: grid;
+    grid-template-columns: 600px auto;
+}
+
+.basicitem1{
+    display:grid;
+    grid-template-rows: 330px 420px 420px;
+
+}
+
+.basicitem1 > img{
+    display:block;
+    width: 90%;
+    margin-left:10px;
+    margin-bottom: 10px;
+
+}
+
+.basicitem2{
+    display:grid;
+    grid-template-columns: 150px 150px;
+    column-gap: 20px;
+    grid-template-rows: max-content;
+    margin-top:-10px;
+    margin-left: 10px;
+    background-color: rgb(168,168,168);
+    
+}
+
+
+.basictable1 > p{
+
+    font-family: 'Staatliches', cursive;
+    font-size: 18px;
+
+}
+
+.basictable1 > h1{
+    font-size: 20px;
+    margin-left:10px;
+    font-family: 'Staatliches', cursive;
+}
+
+
+
+
+/* kyle field page */
+
+.kyleinfotable{
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-template-rows: 50px 50px 50px 50px;
+    background-color: rgb(168,168,168);
+}
+
+
+.item2 > p{
+   margin-left: 10px;
+   font-family: 'Staatliches', cursive;
+   font-size: 18px;
+}
+.item2 > h1{
+    font-size: 20px;
+    margin-left:10px;
+    font-family: 'Staatliches', cursive;
+}
+
+
+
+.tableheader{
+    margin-left: 70%;
+    font-family: 'Staatliches', cursive;
+}
+
+
+.item1 > img{
+    display: block;
+    width: 90%;
+    margin-left: 10px
+}
+
+.kylecontentwrap{
+    display: grid;
+    grid-template-columns: 5.5fr 4.5fr;
+}
+
+.kyleinfo{
+    display:grid;
+    grid-template-rows: 150px 150px;
+}
+
+.item1 > p{
+    font-family: 'Staatliches', cursive;
+}
+
+
+
+.logocontainer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 510px 510px 510px;
+}
+
+.logoitem > img{
+    display: block;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.logoitem > p{
+    font-family: 'Staatliches', cursive;
+    font-size: 30px;
+    text-align: center;
+    display: block;
+}
+
+
+.form > p{
+   font-family: 'Staatliches', cursive;
+   font-size: 18px;
+}
+
+.form{
+    margin-bottom: 10px;
+}
+
+
+.collapsible{
+    background-color: rgb(80,0,0);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border:none;
+    text-align: left;
+    outline: none;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.mainLoginInput::placeholder { 
+    font-family: 'Staatliches', cursive;
+    font-size: 18px;
+  }
+
+
+
+.active, .collapsible:hover{
+    background-color: (120,0,0);
+}
+
+.content{
+    padding:0 18px;
+    display: none;
+    overflow:hidden;
+    background-color: rgb(168,168,168);
+}
+
+input[type=submit]{
+    font-family: 'Staatliches', cursive;
+    font-size:18px;
+}
+
+input[type=text]{
+    height:22px;
+    margin-bottom: 3px;
+    margin-top:3px;
+}
+.collapsible{
+    margin-top: 0px;
+}

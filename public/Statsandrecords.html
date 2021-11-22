@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="index.css">
+
+    </head>
+
+    <body>
+         <!-- Buttons at top of page for site navigation-->
+         <div class="navwrapper">
+
+            <a href="index.html">
+                <button class="headerbtns"type="button">Home</button>
+            </a>
+
+            <a href="Statsandrecords.html">
+                <button class="headerbtns" type="button">Stats and Records</button>
+            </a>
+
+            <a href="PlayerandCoaches.html">
+                <button class="headerbtns" type="button">Players and Coaches </button>
+            </a>
+            
+            <a href="Kylefield.html">
+                <button class ="headerbtns"type="button">Kyle Field </button>
+            </a>
+
+        </div>
+
+        <h1 id="pagetitle">Stats and records</h1>
+
+
+        <button type="button" class="collapsible">Head to Head Records</button>
+        <div class="content">
+            <form class="form">
+                <p>Team Name:</p>
+                <input type="text" placeholder="Team Name:" class="mainLoginInput">
+                <input type="submit">
+            </form>
+        </div>
+
+        <button type="button" class="collapsible">Yearly Records</button>
+        <div class="content">
+            <form class="form">
+                <p>Year:</p>
+                <input type="text" placeholder="Year:" class="mainLoginInput">
+                <input type="submit">
+            </form>
+        </div>
+
+        <button type="button" class="collapsible">Game Records</button>
+        <div class="content">
+            <form class="form">
+                <p>Team:</p>
+                <input type="text" placeholder="Team:" class="mainLoginInput">
+                <p>Year:</p>
+                <input type="text" placeholder="Year:" class="mainLoginInput">
+                <input type="submit">
+            </form>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+    
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+                });
+                }
+            </script>
+    
+
+
+
+    </body>
+</html>
