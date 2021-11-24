@@ -233,3 +233,29 @@ input[type=text]{
 .collapsible{
     margin-top: 0px;
 }
+
+
+.sectionhead{
+    font-family: 'Staatliches', cursive;
+    font-size:65px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.content > h3{
+    font-family: 'Staatliches', cursive;
+    font-size: 30px;
+}
+
+
+.pcgrid{
+    display: grid;
+    grid-template-columns: 350px auto;
+    grid-template-rows: 300px;
+    margin-bottom: 30px;
+
+}
+
+.pcitem > img{
+    height:100%;
+}

@@ -29,5 +29,78 @@
         </div>
 
         <h1 id="pagetitle">Players and coaches</h1>
+
+
+        <div>
+
+            <h2 class="sectionhead">Players</h2>
+            
+            <button type="button" class="collapsible">Johnny Manziel</button>
+            <div class="content">
+
+                <h3>Johnny Manziel</h3>
+
+                <div class="pcgrid">
+
+                    <div class="pcitem">
+                        <p>check</p>
+                    </div>
+                    <div class="pcitem">
+                        <img src="https://s.hdnux.com/photos/01/12/64/62/19614875/15/1200x0.jpg">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <button type="button" class="collapsible">John David Crow</button>
+            <div class="content">
+
+                <h3>John David Crow</h3>
+
+                <div class="pcgrid">
+
+                    <div class="pcitem">
+                        <p>check</p>
+                    </div>
+                    <div class="pcitem">
+                        <img src="https://www.heisman.com/wp-content/uploads/images/2015/11/25/rp_primary_jdcrow.jpg">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <h2 class="sectionhead">Coaches</h2>
+
+
+
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+    
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+                });
+                }
+            </script>
+    
+
+
+
     </body>
 </html>
