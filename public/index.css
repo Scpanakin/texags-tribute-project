@@ -1,8 +1,9 @@
-/* general styling */
+/* On all Pages */
 
 body{
-    background-color:rgb(192, 196, 192);
+    background-color:rgb(209, 209, 209);
 }
+
 #pagetitle{
     margin-top: 50px;
     text-align: center;
@@ -12,14 +13,16 @@ body{
     font-size: 100px;
 }
 
+    /* Top Button Styling and Grid*/
 button{
-    background-color: rgb(80,0,0);
+    background-color: rgba(80,0,0,0.6);
     width:18.5%;
     height: 100%;
     color: rgb(192, 196, 192);
     text-align: center;
     font-family: 'Staatliches', cursive;
     font-size: 25px;
+    border-radius: 10px;
 }
 
 .headerbtns{
@@ -29,42 +32,49 @@ button{
     vertical-align: top;
 }
 
-li{
-    line-height: 1.75;
-    font-family: 'Staatliches', cursive;
-    font-size: 18px;
-}
-.center{
-   margin-top: -10px;
-   display: block; 
-   margin-left: auto;
-   margin-right: auto;
-}
-ul{
-    margin-top: 50px;
-}
-
 .navwrapper{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 5px;
 }
 
-/* main page */
+    /*  */
+
+    /* centers items */
+
+.center{
+    margin-top: -10px;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+    /*  */
+
+    /* Sections headers for all pages */
 
 .sectionhead{
-    text-align: center;
+    text-align: center; 
     color:#500000;
     font-family: 'Staatliches', cursive;
     font-style:bold;
     font-size: 50px;
 }
+    /*  */
 
+/* ****************** */
+
+/* Index */
+
+    /* Creates the outer grid (Holds the picture and basic info grids) */
 
 .basicinfo{
     display: grid;
     grid-template-columns: 600px auto;
 }
+    /*  */
+
+    /* Creates the Picture grid */
 
 .basicitem1{
     display:grid;
@@ -72,13 +82,21 @@ ul{
 
 }
 
-.basicitem1 > img{
-    display:block;
-    width: 90%;
-    margin-left:10px;
-    margin-bottom: 10px;
+    /*  */
 
-}
+    /* Styles the images in the picture grid*/
+
+    .basicitem1 > img{
+        display:block;
+        width: 90%;
+        margin-left:10px;
+        margin-bottom: 10px;
+    
+    }
+
+    /*  */
+
+    /* Creates the basic information grid */
 
 .basicitem2{
     display:grid;
@@ -87,10 +105,15 @@ ul{
     grid-template-rows: max-content;
     margin-top:-10px;
     margin-left: 10px;
-    background-color: rgb(168,168,168);
+    background-color: rgba(80, 0, 0, 0.4);
+    border-radius: 10px;
     
 }
 
+    /*  */
+
+
+    /* Styles the basic info grid */
 
 .basictable1 > p{
 
@@ -105,10 +128,132 @@ ul{
     font-family: 'Staatliches', cursive;
 }
 
+    /*  */
 
+    /* Logo grid */
+
+.logocontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 510px 510px;
+    row-gap: -100px;
+
+}
+
+.logoitem > img{
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.logoitem > p{
+    font-family: 'Staatliches', cursive;
+    font-size: 30px;
+    text-align: center;
+    display: block;
+}
+
+    /*  */
+
+    /* Pictures that accompany the timeline */
+
+figure{
+    display: inline-block;
+    margin: 20px;
+    float:right;
+}
+figure img {
+    vertical-align: top;
+    width:100%;
+}
+figure figcaption {
+
+    text-align: center;
+    font-family: Staatliches, cursive;
+    font-size: 18px;
+}
+
+    /*  */
+
+    /* Timeline */
+
+.timeline {
+    margin: 0 auto;
+    max-width: 950px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+    font-family: "Fira Sans", sans-serif;
+    color: black;
+  }
+  
+  .timeline__component {
+    margin: 0 20px 20px 20px;
+  }
+  
+  .timeline__component--bg {
+    padding: 1.5em;
+    background: rgba(80, 0, 0, 0.4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  
+  .timeline__component--bottom {
+    margin-bottom: 0;
+  }
+  
+  .timeline__middle {
+    position: relative;
+    background: #ffffff;
+  }
+  
+  .timeline__point {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+  }
+
+  .timeline__point--bottom {
+    top: initial;
+    bottom: 0;
+  }
+  
+  .timeline__date--right {
+    text-align: right;
+  }
+  
+  .timeline__title {
+    margin: 0;
+    font-size: 1.15em;
+    font-weight: bold;
+  }
+  
+  .timeline__paragraph {
+    line-height: 1.5;
+  }
+
+
+  .outertlgrid{
+      display: grid;
+      grid-template-columns: 2.2fr 1fr;
+  }
+
+  .tlimg{
+      display:grid;
+      grid-template-rows: 600px 650px 250px 350px 1550px 530px 350px 400px 700px 950px 1200px 350px 350px 250px;
+  }
+  /*  */
 
 
 /* kyle field page */
+
+  /* Creates a grid for the Kyle Field info table */
 
 .kyleinfotable{
     display: grid;
@@ -117,6 +262,9 @@ ul{
     background-color: rgb(168,168,168);
 }
 
+    /*  */
+
+    /* Styles the elements in the table */
 
 .item2 > p{
    margin-left: 10px;
@@ -129,56 +277,50 @@ ul{
     font-family: 'Staatliches', cursive;
 }
 
+    /*  */
 
-
+    /* Styles the header of the info table */
 .tableheader{
     margin-left: 70%;
     font-family: 'Staatliches', cursive;
 }
 
+    /* Items in the images and paras grid*/
 
 .item1 > img{
     display: block;
     width: 90%;
     margin-left: 10px
 }
+    /*  */
+    
+    /* Creates an outer grid that holds the info table and the images/paras */
 
 .kylecontentwrap{
     display: grid;
     grid-template-columns: 5.5fr 4.5fr;
 }
+    /*  */
+
+    /* Creates a grid for the paragraphs and the images */
 
 .kyleinfo{
     display:grid;
     grid-template-rows: 150px 150px;
 }
+    /*  */
 
 .item1 > p{
     font-family: 'Staatliches', cursive;
 }
 
+/* ************** */
 
 
-.logocontainer{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 510px 510px 510px;
-}
 
-.logoitem > img{
-    display: block;
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
-.logoitem > p{
-    font-family: 'Staatliches', cursive;
-    font-size: 30px;
-    text-align: center;
-    display: block;
-}
+/* Stats and Records */
 
+    /* Creates a form so that user can submit input, which the cfb API will use to output appropriate data */
 
 .form > p{
    font-family: 'Staatliches', cursive;
@@ -189,6 +331,22 @@ ul{
     margin-bottom: 10px;
 }
 
+    /*  */
+
+/* ******** */
+
+/* Stats and Records + Players and Coaches */
+
+        /* Styles the headers in the collapsibles  */
+
+.content > h3{
+    font-family: 'Staatliches', cursive;
+    font-size: 30px;
+}
+
+    /*  */
+
+    /* Creates the Collapsibles used on both pages listed */
 
 .collapsible{
     background-color: rgb(80,0,0);
@@ -234,19 +392,13 @@ input[type=text]{
     margin-top: 0px;
 }
 
+    /*  */
 
-.sectionhead{
-    font-family: 'Staatliches', cursive;
-    font-size:65px;
-    text-align: left;
-    margin-left: 20px;
-}
+/* *********** */
 
-.content > h3{
-    font-family: 'Staatliches', cursive;
-    font-size: 30px;
-}
+/* Players and Coaches */
 
+    /* Creates and styles the grids in each collapsible */
 
 .pcgrid{
     display: grid;
@@ -259,3 +411,9 @@ input[type=text]{
 .pcitem > img{
     height:100%;
 }
+
+    /*  */
+
+/* *************** */
+  
+
