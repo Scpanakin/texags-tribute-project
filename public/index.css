@@ -13,9 +13,20 @@ body{
     font-size: 100px;
 }
 
+.foot > p{
+    font-family: 'Staatliches', cursive;
+    font-style:bold;
+    font-size: 18px;
+}
+.foot{
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: gray;
+    height: 150px;
+}
     /* Top Button Styling and Grid*/
 button{
-    background-color: rgba(80,0,0,0.6);
+    background-color: rgba(80,0,0,0.6) !important;
     width:18.5%;
     height: 100%;
     color: rgb(192, 196, 192);
@@ -70,7 +81,8 @@ button{
 
 .basicinfo{
     display: grid;
-    grid-template-columns: 600px auto;
+    grid-template-columns: auto 60%;
+
 }
     /*  */
 
@@ -78,7 +90,8 @@ button{
 
 .basicitem1{
     display:grid;
-    grid-template-rows: 330px 420px 420px;
+    grid-template-rows: 33% 33% 33%;
+    row-gap: 10px;
 
 }
 
@@ -88,7 +101,8 @@ button{
 
     .basicitem1 > img{
         display:block;
-        width: 90%;
+        max-height: 90%;
+        width: 85%;
         margin-left:10px;
         margin-bottom: 10px;
     
@@ -100,7 +114,7 @@ button{
 
 .basicitem2{
     display:grid;
-    grid-template-columns: 150px 150px;
+    grid-template-columns: 30% 150px;
     column-gap: 20px;
     grid-template-rows: max-content;
     margin-top:-10px;
@@ -115,10 +129,13 @@ button{
 
     /* Styles the basic info grid */
 
+.basictable{
+    max-width: 70%;
+}
 .basictable1 > p{
 
     font-family: 'Staatliches', cursive;
-    font-size: 18px;
+    font-size: 22px;
 
 }
 
@@ -136,13 +153,14 @@ button{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 510px 510px;
-    row-gap: -100px;
+    row-gap: 1%;
 
 }
 
 .logoitem > img{
     display: block;
-    width: 90%;
+    max-width: 90%;
+    max-height: 80%;
     margin-left: auto;
     margin-right: auto;
     
@@ -165,7 +183,10 @@ figure{
 }
 figure img {
     vertical-align: top;
-    width:100%;
+    display: block;
+    margin: auto;
+    max-width:100%;
+    max-height: 90%;
 }
 figure figcaption {
 

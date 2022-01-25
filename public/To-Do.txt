@@ -1,0 +1,15 @@
+Learning:
+Backend Course FCC
+Front-end Libraries FCC
+API Video
+Node.js Video
+
+Site-Specific
+Bootstrap: See if you can get btn primary and btn to work with navigation buttons
+Make a footer
+Write an intro for index.html
+Finish Kyle Field information
+Add more coaches and players collapsibles
+Add more collapsibles for stst
+See if you can change cursor
+Make website look nicer (elaborate as you think of ideas)
