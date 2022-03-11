@@ -10,6 +10,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "animate.css": "^4.1.1",
+    "express": "^4.17.1",
+    "save": "^2.4.0"
+  },
+  "devDependencies": {
+    "prettier": "2.5.1"
   }
 }

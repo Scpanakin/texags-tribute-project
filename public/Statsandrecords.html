@@ -1,37 +1,121 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="index.css">
+          <!-- Libraries -->
+
+    <!-- Animate CSS -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+   
+     <!-- Boostrap -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+
+
+    <!-- Index.css -->
+    <link rel="stylesheet" href="index.css">
+    
+    
+    <!-- Google FOnts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+
+
+
+    <script>
+        $(document).ready(function() {
+  window.onscroll = function() {myFunction()};
+  
+  // Get the header
+  var header = document.getElementById("myHeader");
+  
+  // Get the offset position of the navbar
+  var sticky = header.offsetTop;
+  
+  // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+  
+  
+  
+        });
+      </script>
 
     </head>
 
     <body>
          <!-- Buttons at top of page for site navigation-->
-         <div class="navwrapper">
-
-            <a href="index.html">
-                <button class="headerbtns"type="button">Home</button>
-            </a>
-
-            <a href="Statsandrecords.html">
-                <button class="headerbtns" type="button">Stats and Records</button>
-            </a>
-
-            <a href="PlayerandCoaches.html">
-                <button class="headerbtns" type="button">Players and Coaches </button>
-            </a>
-            
-            <a href="Kylefield.html">
-                <button class ="headerbtns"type="button">Kyle Field </button>
-            </a>
-
-        </div>
+         <header>
+            <nav class="nav" id="myHeader">
+         
+             <div class="dropdown navitem">
+             <a class="navitem" id="home" href="index.html">
+                  <h1 class="headerbtns"type="button">Home</h1>
+              </a>
+               <div class="dropdown-content">
+                 <a href="index.html#basicInfo">Basic Info</a>
+                 <a href="index.html#rivalries">Rivalries</a>
+                 <a href="index.html#logos">Logos</a>
+                 <a href="index.html#timeline">Timeline</a>
+               </div>
+             </div>
+         
+         
+         
+             <div class="dropdown navitem">
+               <a class="navitem" id="navlink" href="Statsandrecords.html">
+                  <h1 class="headerbtns" type="button">Stats and Records</h1>
+              </a>
+                 <div class="dropdown-content">
+                   <a href="Statsandrecords.html#ReBs">Records and Boxscores</a>
+                   <a href="Statsandrecords.html#asm">Advanced Stats and Metrics</a>
+                   <a href="Statsandrecords.html#rankings">Rankings</a>
+                   <a href="Statsandrecords.html#pdd">Play and Drive Data</a>
+                 </div>
+               </div>
+         
+         
+               <div class="dropdown navitem">
+                 <a class="navitem" id="navlink" href="PlayerandCoaches.html">
+                  <h1 class="headerbtns" type="button">Players and Coaches </h1>
+                 </a>
+                   <div class="dropdown-content">
+                     <a href="PlayerandCoaches.html#players">Players</a>
+                     <a href="PlayerandCoaches.html#coaches">Coaches</a>
+                     <a href="PlayerandCoaches.html#pss">Player Search and Stats</a>
+                     <a href="PlayerandCoaches.html#csr">Coach Search and Records</a>
+                     <a href="PlayerandCoaches.html#rdd">Recruiting and Draft Data</a>
+                   </div>
+                 </div>
+         
+         
+                 <div class="dropdown navitem">
+                    <a class="navitem" id="navlink" href="Kylefield.html">
+                  <h1 class ="headerbtns" type="button">Kyle Field </h1>
+                   </a>
+                     <div class="dropdown-content">
+                       <a href="Kylefield.html#kyleFieldInfo">Kyle Field Info</a>
+                       <a href="Kylefield.html#notableGames">Notable Games</a>
+                     </div>
+                   </div>
+         
+             </nav>
+         </header>
 
         <h1 id="pagetitle">Stats and records</h1>
 
-        <h1 class="sectionhead">Records and Boxscores</h1>
+        <h1 class="sectionhead" id="ReBs">Records and Boxscores</h1>
         <button type="button" class="collapsible">Head to Head Records</button>
         <div class="content">
             <form class="form">
@@ -62,7 +146,7 @@
         </div>
 
 
-        <h1 class="sectionhead">Advanced Stats and Metrics</h1>
+        <h1 class="sectionhead" id="asm">Advanced Stats and Metrics</h1>
 
         <button type="button" class="collapsible">Team Stats by Season</button>
         <div class="content">
@@ -100,7 +184,7 @@
             </form>
         </div>
 
-        <h1 class="sectionhead">Rankings and Ratings Metrics</h1>
+        <h1 class="sectionhead" id="rankings">Rankings and Ratings Metrics</h1>
 
         <button type="button" class="collapsible">Rankings By Week</button>
         <div class="content">
@@ -120,7 +204,7 @@
             </form>
         </div>
         
-        <h1 class="sectionhead">Play and Drive Data</h1>
+        <h1 class="sectionhead" id="pdd">Play and Drive Data</h1>
 
         <button type="button" class="collapsible">Drives By Game</button>
         <div class="content">

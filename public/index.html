@@ -1,46 +1,127 @@
 <!DOCTYPE html>
 <html>
  <head>
-    <!-- Boostrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Libraries -->
+
+    <!-- Animate CSS -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+   
+     <!-- Boostrap -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+
+
+    <!-- Index.css -->
+    <link rel="stylesheet" href="index.css">
     
+    
+    <!-- Google FOnts -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Staatliches&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+    
+
+    
+  
+
+    <script>
+      $(document).ready(function() {
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+
+
+      });
+    </script>
+
+
 
  </head>
 
  <body>
+  <heade id="basicInfo">
+   <nav class="nav" id="myHeader">
 
-    <!-- Buttons at top of page for site navigation-->
-     <div class="navwrapper">
+    <div class="dropdown navitem" >
+    <a class="navitem" id="home" href="index.html">
+         <h1 class="headerbtns"type="button">Home</h1>
+     </a>
+      <div class="dropdown-content">
+        <a href="index.html#basicInfo"><h4>Basic Info</h4></a>
+        <a href="index.html#rivalries"><h4>Rivalries</h4></a>
+        <a href="index.html#logos"><h4>Logos</h4></a>
+        <a href="index.html#timeline"><h4>Timeline</h4></a>
+      </div>
+    </div>
 
-         <a href="index.html">
-          <!-- btn-primary:
-          Try to get this to work with your buttons -->
-             <button class="headerbtns btn-primary"type="button">Home</button>
-         </a>
 
 
-         <a href="Statsandrecords.html">
-             <button class="headerbtns" type="button">Stats and Records</button>
-         </a>
+    <div class="dropdown navitem">
+      <a class="navitem" id="navlink" href="Statsandrecords.html">
+         <h1 class="headerbtns" type="button">Stats and Records</h1>
+     </a>
+        <div class="dropdown-content">
+          <a href="Statsandrecords.html#ReBs"><h4>Records and Boxscores</h4></a>
+          <a href="Statsandrecords.html#asm"><h4>Advanced Stats and Metrics</h4></a>
+          <a href="Statsandrecords.html#rankings"><h4>Rankings</h4></a>
+          <a href="Statsandrecords.html#pdd"><h4>Play and Drive Data</h4></a>
+        </div>
+      </div>
 
-         <a href="PlayerandCoaches.html">
-             <button class="headerbtns" type="button">Players and Coaches </button>
-         </a>
-         
-         <a href="Kylefield.html">
-             <button class ="headerbtns"type="button">Kyle Field </button>
-         </a>
 
-     </div>
+      <div class="dropdown navitem">
+        <a class="navitem" id="navlink" href="PlayerandCoaches.html">
+         <h1 class="headerbtns" type="button">Players and Coaches </h1>
+        </a>
+          <div class="dropdown-content">
+            <a href="PlayerandCoaches.html#players"><h4>Players</h4></a>
+            <a href="PlayerandCoaches.html#coaches"><h4>Coaches</h4></a>
+            <a href="PlayerandCoaches.html#pss">Player Search and Stats</a>
+            <a href="PlayerandCoaches.html#csr">Coach Search and Records</a>
+            <a href="PlayerandCoaches.html#rdd">Recruiting and Draft Data</a>
+          </div>
+        </div>
 
+
+        <div class="dropdown navitem">
+           <a class="navitem" id="navlink" href="Kylefield.html">
+         <h1 class ="headerbtns" type="button">Kyle Field </h1>
+          </a>
+            <div class="dropdown-content">
+              <a href="Kylefield.html#kyleFieldInfo">Kyle Field Info</a>
+              <a href="Kylefield.html#notableGames">Notable Games</a>
+            </div>
+          </div>
+
+    </nav>
+</header>
+
+
+<div class="">
      <div class="title">
         <h1 id="pagetitle">Texas A&M Aggies</h1>
      </div>
 
-     <h1 class="tableheader"> Basic info</h1>
+     <h1 class="tableheader" > Basic info</h1>
 
 
      <div class="basicinfo">
@@ -166,7 +247,7 @@
                 <h1>Home Stadium: </h1>
             </div>
 
-            <div class="basictable1">
+            <div class="basictable1"id="rivalries">
                 <p>Kyle Field</p>
             </div>
 
@@ -186,21 +267,325 @@
                 <p>28</p>
             </div>
             
-
-
-
-
-
+            </div>
 
         </div>
 
-    </div>
+        <div class="spacer">
+
+        </div>
+              <h2 class="sectionhead center" >Rivalries</h2>
+
+            <div class="rivalbox">
+
+              <div class="rivitem">
+
+                <div class="rivtitle">
+
+                  <h3><span class="ut">Texas</span></h3>
+                  <img src="https://hotdog.com/wp-content/uploads/watch-texas-football-online.jpg">
+
+                </div>
+
+                <div class="rivwrap">
+                  <div>
+                    <p>"The Lonestar Showdown"</p>
+                    <p class="rivbody">Texas A&M and UT first played against each other in 1894 and would play almost every
+                      season until 2011, when Texas A&M joined the SEC.
+                    </p>
+                  </div>
+
+                  <div class="rivgrid">
+
+                    <div class="rivgridit">
+                      <p>Record:</p>
+                    </div>
+
+                    <div class="rivgridit">
+                      <p><span class="aggies">37</span>-<span class="ut">76</span>-5</p>
+                    </div>
+
+                    <div class="rivgridit">
+                      <p>Distance:&nbsp;</p>
+                    </div>
+
+                    <div class="rivgridit">
+                      <p>105 miles</p>
+                    </div>
+
+                    <div class="rivgridit">
+                      <p>First Game:</p>
+                    </div>
+
+                    <div class="rivgridit">
+                      <p>1894&nbsp;&nbsp;&nbsp;<span class="aggies">0</span>-<span class="ut">38</span></p>
+                    </div>
+                    
+                    <div class="rivgridit">
+                      <p>Next Game:&nbsp;</p>
+                    </div>
+
+                    <div class="rivgridit">
+                      <p>2025</p>
+                    </div>
+
+                    <div class="rivgridit">
+                      <p>Last Meeting:&nbsp;</p>
+                    </div>
+
+                    <div class="rivgridit">
+                      <p>2011&nbsp;&nbsp;&nbsp;<span class="aggies">25</span>-<span class="ut">27</span></p>
+                    </div>
+
+                    <div class="rivgridit">
+                      <p>Total Games:&nbsp;</p>
+                    </div>
+
+                    <div class="rivgridit">
+                      <p>118</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+
+              <div class="rivitem">
+
+                <div class="rivtitle">
+
+                  <h3><span class="baylor">Baylor</span></h3>
+                  <img src="https://dmn-dallas-news-prod.cdn.arcpublishing.com/resizer/9z-BGroBLWoV6zqqxQWALzOVd5U=/1660x934/smart/filters:no_upscale()/cloudfront-us-east-1.images.arcpublishing.com/dmn/CKMH42ELMEE5LIADBDLXHDH23U.jpg">
+                
+                </div>
+
+                <div class="rivwrap">
+                  <div>
+                    <p>"Battle of the Brazos"</p>
+                  </div>
+
+                  <div class="rivgrid">
+
+                    <div class="rivgridit">
+                      <p>Test</p>
+                    </div>
+
+                    <div class="rivgridit">
+                      <p>Test</p>
+                    </div>
+
+                    <div class="rivgridit">
+                      <p>Test</p>
+                    </div>
+
+                    <div class="rivgridit">
+                      <p>Test</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+                
+
+              <div class="rivitem">
+
+                <div class="rivtitle">
+
+                  <h3><span class="arkansas">Arkansas</span></h3>
+                  <img src="https://pixy.org/download/752991/">
+
+                </div>
+                
+                <div class="rivwrap">
+                  <div>
+                    <p>"The Southwest Classic"</p>
+                  </div>
+
+                  <div class="rivgrid">
+
+                    <div class="rivgridit">
+                      <p>Test</p>
+                    </div>
+
+                    <div class="rivgridit">
+                      <p>Test</p>
+                    </div>
+
+                    <div class="rivgridit">
+                      <p>Test</p>
+                    </div>
+
+                    <div class="rivgridit">
+                      <p>Test</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+            </div>
+
+
+
+
+            </div>
+
+
+
+
+
+            <div class="rivalbox">
+
+              <div class="rivitem">
+
+                <div class="rivtitle">
+
+                  <h3><span class="tech">Texas Tech</span></h3>
+                  <img src="data:image/png;base64,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">
+                
+                </div>
+
+                <div class="rivwrap">
+                  <div>
+                    <p>Test</p>
+                  </div>
+
+                  <div class="rivgrid">
+
+                    <div class="rivgridit">
+                      <p>Test</p>
+                    </div>
+
+                    <div class="rivgridit">
+                      <p>Test</p>
+                    </div>
+
+                    <div class="rivgridit">
+                      <p>Test</p>
+                    </div>
+
+                    <div class="rivgridit">
+                      <p>Test</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <div class="rivitem">
+
+                <div class="rivtitle">
+
+                  <h3><span class="lsu">LSU</span></h3>
+                  <img src="https://larrybrownsports.com/wp-content/uploads/2020/11/lsu-tigers-logo.jpg">
+
+                </div>
+
+                <div class="rivwrap">
+                  <div>
+                    <p>Test</p>
+                  </div>
+
+                  <div class="rivgrid">
+
+                    <div class="rivgridit">
+                      <p>Test</p>
+                    </div>
+
+                    <div class="rivgridit">
+                      <p>Test</p>
+                    </div>
+
+                    <div class="rivgridit">
+                      <p>Test</p>
+                    </div>
+
+                    <div class="rivgridit">
+                      <p>Test</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+
+              <div class="rivitem">
+
+                <div class="rivtitle">
+
+                  <h3><span class="tcu">TCU</span></h3>
+                  <img src="https://content.sportslogos.net/logos/34/868/full/tcu_horned_frogs_logo_alt_on_dark_2013_sportslogosnet-4500.png">
+                
+                </div>
+
+                <div class="rivwrap">
+                  <div>
+                    <p>Test</p>
+                  </div>
+
+                  <div class="rivgrid">
+
+                    <div class="rivgridit">
+                      <p>Test</p>
+                    </div>
+
+                    <div class="rivgridit">
+                      <p>Test</p>
+                    </div>
+
+                    <div class="rivgridit">
+                      <p>Test</p>
+                    </div>
+
+                    <div class="rivgridit" id="logos">
+                      <p>Test</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              
+
+              </div>
+
+
+            
+
+
+
+              
+
+
+            
+
+
+
+    
+
+
+        
+
+    
 
 
 
     <div>
 
-        <h1 class="sectionhead">Logos</h1>
+        <h1 class="sectionhead" id="logos">Logos</h1>
 
         <div class="logocontainer">
 
@@ -241,7 +626,7 @@
 
 
 
-    <h1 class="sectionhead"> Timeline</h1>
+    <h1 class="sectionhead" id="timeline"> Timeline</h1>
 
 <div class="outertlgrid">
     <div class="timeline">
@@ -718,7 +1103,7 @@
       </div>
 
 </div>
-
+</div>
 <footer class="foot">
   <p>Author: Shanti Patel</p>
 </footer>

@@ -3,14 +3,59 @@
 
 
     <head>
+  <!-- Libraries -->
 
-        <!-- Imports google fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <!-- Animate CSS -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+   
+     <!-- Boostrap -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
 
-        <!--  Links Css File -->
-        <link rel="stylesheet" type="text/css" href="index.css">
+
+    <!-- Index.css -->
+    <link rel="stylesheet" href="index.css">
+    
+    
+    <!-- Google FOnts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+
+    <script>
+        $(document).ready(function() {
+  window.onscroll = function() {myFunction()};
+  
+  // Get the header
+  var header = document.getElementById("myHeader");
+  
+  // Get the offset position of the navbar
+  var sticky = header.offsetTop;
+  
+  // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+  
+  
+  
+        });
+      </script>
+
+
+
+
+
 
     </head>
 
@@ -20,25 +65,62 @@
 
 
         <!-- Buttons at top of page for site navigation-->
-        <div class="navwrapper">
-
-            <a href="index.html">
-                <button class="headerbtns"type="button">Home</button>
-            </a>
-
-            <a href="Statsandrecords.html">
-                <button class="headerbtns" type="button">Stats and Records</button>
-            </a>
-
-            <a href="PlayerandCoaches.html">
-                <button class="headerbtns" type="button">Players and Coaches </button>
-            </a>
-            
-            <a href="Kylefield.html">
-                <button class ="headerbtns"type="button">Kyle Field </button>
-            </a>
-
-        </div>
+        <header>
+            <nav class="nav" id="myHeader">
+         
+             <div class="dropdown navitem">
+             <a class="navitem" id="home" href="index.html">
+                  <h1 class="headerbtns"type="button">Home</h1>
+              </a>
+               <div class="dropdown-content">
+                 <a href="index.html#basicInfo">Basic Info</a>
+                 <a href="index.html#rivalries">Rivalries</a>
+                 <a href="index.html#logos">Logos</a>
+                 <a href="index.html#timeline">Timeline</a>
+               </div>
+             </div>
+         
+         
+         
+             <div class="dropdown navitem">
+               <a class="navitem" id="navlink" href="Statsandrecords.html">
+                  <h1 class="headerbtns" type="button">Stats and Records</h1>
+              </a>
+                 <div class="dropdown-content">
+                   <a href="Statsandrecords.html#ReBs">Records and Boxscores</a>
+                   <a href="Statsandrecords.html#asm">Advanced Stats and Metrics</a>
+                   <a href="Statsandrecords.html#rankings">Rankings</a>
+                   <a href="Statsandrecords.html#pdd">Play and Drive Data</a>
+                 </div>
+               </div>
+         
+         
+               <div class="dropdown navitem">
+                 <a class="navitem" id="navlink" href="PlayerandCoaches.html">
+                  <h1 class="headerbtns" type="button">Players and Coaches </h1>
+                 </a>
+                   <div class="dropdown-content">
+                     <a href="PlayerandCoaches.html#players">Players</a>
+                     <a href="PlayerandCoaches.html#coaches">Coaches</a>
+                     <a href="PlayerandCoaches.html#pss">Player Search and Stats</a>
+                     <a href="PlayerandCoaches.html#csr">Coach Search and Records</a>
+                     <a href="PlayerandCoaches.html#rdd">Recruiting and Draft Data</a>
+                   </div>
+                 </div>
+         
+         
+                 <div class="dropdown navitem">
+                    <a class="navitem" id="navlink" href="Kylefield.html">
+                  <h1 class ="headerbtns" type="button">Kyle Field </h1>
+                   </a>
+                     <div class="dropdown-content">
+                       <a href="Kylefield.html#kyleFieldInfo">Kyle Field Info</a>
+                       <a href="Kylefield.html#notableGames">Notable Games</a>
+                     </div>
+                   </div>
+         
+             </nav>
+         </header>
 
    
 
@@ -48,7 +130,7 @@
         <h1 id="pagetitle">Kyle Field</h1>
 
 
-        <h1 class="tableheader">Basic Information</h1>
+        <h1 class="tableheader" id="kyleFieldInfo">Basic Information</h1>
 
 
         <!-- Grid for Information about Kyle Field-->
@@ -157,6 +239,994 @@
             </div>
 
         </div>
+
+        <div>
+            <h2 class="sectionhead" id="notableGames">Notable Games</h2>
+
+
+            <!-- Odd template -->
+            <div class="ngamesbox">
+                <div class="ngitemtext">
+                    <h2 class="ngHeader"><span class="aggies">A&M</span> vs. <span class="alabama">Alabama</span>- November 24th 2011</h2>
+                    <h2 class="ngHeader"><span class="aggies">41</span>-<span class="alabama">38</span></h2>
+
+                    <h3 class="ngHeader">Background info</h3>
+                    <p class="bgi">PLaceholder text</p>
+
+                    <div class="boxscore">
+
+                        <!-- first row -->
+                        <div class="bsItem">
+                            <p>Quarter</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>1</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>2</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>3</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>4</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>OT</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>T</p>
+                        </div>
+
+                        <!-- second row -->
+                        <div class="bsItem">
+                            <p><span class="aggies">A&M</span></p>
+                        </div>
+                        <div class="bsItem">
+                            <p>10</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>6</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>0</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>9</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>0</p>
+                        </div>
+                        <div class="bsItem">
+                            <p><span class="aggies">25</span></p>
+                        </div>
+
+                        <!-- third row -->
+                        <div class="bsItem">
+                            <p><span class="ut">UT</span></p>
+                        </div>
+                        <div class="bsItem">
+                            <p>0</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>7</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>17</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>3</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>0</p>
+                        </div>
+                        <div class="bsItem">
+                            <p><span class="ut">27</span></p>
+                        </div>
+
+
+
+                    </div>
+
+                    <!-- Scoring plays data -->
+                    <h2 class="ngHeader">Scoring Plays</h2>
+                    <ul>
+                        <li><span class="aggies">A&M</span>- 1st 11:31 Ryan Tannehill 7yd pass to Ben Malena.</li>
+                        <li><span class="aggies">A&M</span>- 1st 5:40 Randy Bullock 49yd FG. </li>
+                        <li><span class="aggies">A&M</span>- 2nd 10:50 Randy Bullock</li>
+                        <li><span class="ut">UT</span>- 2nd 9:10 Jaxon Shipley 41yd pass to Blain Irby</li>
+                        <li><span class="aggies">A&M</span>- 2nd 4:18 Randy Bullock 29yd FG</li>
+                        <li><span class="ut">UT</span>- 3rd 11:06 Carrington Byndom 58yd interception TD</li>
+                        <li><span class="ut">UT</span>- 3rd 7:44 Justin Tucker 23yd FG</li>
+                        <li><span class="ut">UT</span>- 3rd 4:04 Cody Johnson 1yd rushing TD</li>
+                        <li><span class="aggies">A&M</span>- 4th 5:56 Randy Bullock 32yd FG</li>
+                        <li><span class="aggies">A&M</span>- 4th 5:56 Ryan Tannehill 16yd pass to Jeff Fuller</li>
+                        <li><span class="ut">UT</span>- 4th 0:00 Justin Tucker 40yd FG</li>
+
+                    </ul>
+
+                    <div class="teamStats">
+                        <div class="tsItem">
+                            <p></p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p><span class="aggies">Aggies</span></p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p><span class="ut">UT</span></p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p>Total Yards</p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p><span class="aggies">328</span></p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p><span class="ut">237</span></p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p>Pass Yards</p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p><span class="aggies">228</span></p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p><span class="ut">161</span></p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p>Rushing Yards</p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p><span class="aggies">86</span></p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p><span class="ut">104</span></p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p>Turnovers</p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p><span class="aggies">2</span></p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p><span class="ut">4</span></p>
+                        </div>
+                        
+                        
+
+
+                    </div>
+                    <p>For more detailed info go to the stats and records tab</P>
+
+                </div>
+                <div class="ngitemimg">
+                    <img src="https://www.dallasnews.com/resizer/mTaFhSNs_XUmqh24hK-utOX1CFs=/arc-anglerfish-arc2-prod-dmn/public/AFSXVDZRN2OX6QR2EMEECHORBY.jpg">
+                    <img src="http://1vfaoo3rihwa2hf8z21yve8u-wpengine.netdna-ssl.com/wp-content/uploads/2015/11/jwj-UT-TAMU-1610.jpg">
+                </div>
+
+
+
+                <div class="ngitemtext">
+                    <h2 class="ngHeader"><span class="aggies">A&M</span> vs. <span class="lsu">LSU</span>- November 24th 2011</h2>
+                    <h2 class="ngHeader">25-27</h2>
+
+                    <h3 class="ngHeader">Background info</h3>
+                    <p class="bgi">PLaceholder text</p>
+
+                    <div class="boxscore">
+
+                        <!-- first row -->
+                        <div class="bsItem">
+                            <p>Quarter</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>1</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>2</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>3</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>4</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>OT</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>T</p>
+                        </div>
+
+                        <!-- second row -->
+                        <div class="bsItem">
+                            <p>Aggies</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>10</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>6</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>0</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>9</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>0</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>25</p>
+                        </div>
+
+                        <!-- third row -->
+                        <div class="bsItem">
+                            <p>UT</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>0</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>7</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>17</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>3</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>0</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>27</p>
+                        </div>
+
+
+
+                    </div>
+
+                    <!-- Scoring plays data -->
+                    <h2 class="ngHeader">Scoring Plays</h2>
+                    <ul>
+                        <li>Test</li>
+                    </ul>
+
+                    <div class="teamStats">
+                        <div class="tsItem">
+                            <p></p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p>Aggies</p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p>other team</p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p>Stat 1</p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p>Data 11</p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p>Data 12</p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p>Stat 2</p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p>Data 21</p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p>Data 22</p>
+                        </div>
+                        
+
+
+                    </div>
+
+                </div>
+
+                <div class="ngitemimg">
+                    <p>Test four</p>
+                </div>
+
+            </div>
+
+
+            <!-- Even template -->
+            <div class="ngamesbox">
+
+                <div class="ngitemimg">
+                    <img src="https://www.dallasnews.com/resizer/mTaFhSNs_XUmqh24hK-utOX1CFs=/arc-anglerfish-arc2-prod-dmn/public/AFSXVDZRN2OX6QR2EMEECHORBY.jpg">
+                    <img src="http://1vfaoo3rihwa2hf8z21yve8u-wpengine.netdna-ssl.com/wp-content/uploads/2015/11/jwj-UT-TAMU-1610.jpg">
+                </div>
+
+                <div class="ngitemtext">
+                    <h2 class="ngHeader"><span class="aggies">A&M</span> vs. <span class="lsu">LSU</span>- November 24th 2011</h2>
+                    <h2 class="ngHeader"><span class="aggies">74</span>-<span class="lsu">72</span></h2>
+
+                    <h3 class="ngHeader">Background info</h3>
+                    <p class="bgi">PLaceholder text</p>
+
+                    <div class="boxscore">
+
+                        <!-- first row -->
+                        <div class="bsItem">
+                            <p>Quarter</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>1</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>2</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>3</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>4</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>OT</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>T</p>
+                        </div>
+
+                        <!-- second row -->
+                        <div class="bsItem">
+                            <p><span class="aggies">A&M</span></p>
+                        </div>
+                        <div class="bsItem">
+                            <p>10</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>6</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>0</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>9</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>0</p>
+                        </div>
+                        <div class="bsItem">
+                            <p><span class="aggies">25</span></p>
+                        </div>
+
+                        <!-- third row -->
+                        <div class="bsItem">
+                            <p><span class="ut">UT</span></p>
+                        </div>
+                        <div class="bsItem">
+                            <p>0</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>7</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>17</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>3</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>0</p>
+                        </div>
+                        <div class="bsItem">
+                            <p><span class="ut">27</span></p>
+                        </div>
+
+
+
+                    </div>
+
+                    <!-- Scoring plays data -->
+                    <h2 class="ngHeader">Scoring Plays</h2>
+                    <ul>
+                        <li><span class="aggies">A&M</span>- 1st 11:31 Ryan Tannehill 7yd pass to Ben Malena.</li>
+                        <li><span class="aggies">A&M</span>- 1st 5:40 Randy Bullock 49yd FG. </li>
+                        <li><span class="aggies">A&M</span>- 2nd 10:50 Randy Bullock</li>
+                        <li><span class="ut">UT</span>- 2nd 9:10 Jaxon Shipley 41yd pass to Blain Irby</li>
+                        <li><span class="aggies">A&M</span>- 2nd 4:18 Randy Bullock 29yd FG</li>
+                        <li><span class="ut">UT</span>- 3rd 11:06 Carrington Byndom 58yd interception TD</li>
+                        <li><span class="ut">UT</span>- 3rd 7:44 Justin Tucker 23yd FG</li>
+                        <li><span class="ut">UT</span>- 3rd 4:04 Cody Johnson 1yd rushing TD</li>
+                        <li><span class="aggies">A&M</span>- 4th 5:56 Randy Bullock 32yd FG</li>
+                        <li><span class="aggies">A&M</span>- 4th 5:56 Ryan Tannehill 16yd pass to Jeff Fuller</li>
+                        <li><span class="ut">UT</span>- 4th 0:00 Justin Tucker 40yd FG</li>
+
+                    </ul>
+
+                    <div class="teamStats">
+                        <div class="tsItem">
+                            <p></p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p><span class="aggies">Aggies</span></p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p><span class="ut">UT</span></p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p>Total Yards</p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p><span class="aggies">328</span></p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p><span class="ut">237</span></p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p>Pass Yards</p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p><span class="aggies">228</span></p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p><span class="ut">161</span></p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p>Rushing Yards</p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p><span class="aggies">86</span></p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p><span class="ut">104</span></p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p>Turnovers</p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p><span class="aggies">2</span></p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p><span class="ut">4</span></p>
+                        </div>
+                        
+                    </div>
+
+                    
+
+                    <p>For more detailed info go to the stats and records tab</P>
+
+                </div>
+
+
+                <div class="ngitemimg">
+                        <p>Test four</p>
+                    </div>
+
+                    <div class="ngitemtext">
+                        <h2 class="ngHeader"><span class="aggies">A&M</span> vs. <span class="ut">UT</span>- November 24th 2011</h2>
+                        <h2 class="ngHeader"><span class="aggies">25</span>-<span class="ut">27</span></h2>
+    
+                        <h3 class="ngHeader">Background info</h3>
+                        <p class="bgi">PLaceholder text</p>
+    
+                        <div class="boxscore">
+    
+                            <!-- first row -->
+                            <div class="bsItem">
+                                <p>Quarter</p>
+                            </div>
+                            <div class="bsItem">
+                                <p>1</p>
+                            </div>
+                            <div class="bsItem">
+                                <p>2</p>
+                            </div>
+                            <div class="bsItem">
+                                <p>3</p>
+                            </div>
+                            <div class="bsItem">
+                                <p>4</p>
+                            </div>
+                            <div class="bsItem">
+                                <p>OT</p>
+                            </div>
+                            <div class="bsItem">
+                                <p>T</p>
+                            </div>
+    
+                            <!-- second row -->
+                            <div class="bsItem">
+                                <p><span class="aggies">A&M</span></p>
+                            </div>
+                            <div class="bsItem">
+                                <p>10</p>
+                            </div>
+                            <div class="bsItem">
+                                <p>6</p>
+                            </div>
+                            <div class="bsItem">
+                                <p>0</p>
+                            </div>
+                            <div class="bsItem">
+                                <p>9</p>
+                            </div>
+                            <div class="bsItem">
+                                <p>0</p>
+                            </div>
+                            <div class="bsItem">
+                                <p>0</p>
+                            </div>
+                            <div class="bsItem">
+                                <p><span class="aggies">25</span></p>
+                            </div>
+    
+                            <!-- third row -->
+                            <div class="bsItem">
+                                <p><span class="ut">UT</span></p>
+                            </div>
+                            <div class="bsItem">
+                                <p>0</p>
+                            </div>
+                            <div class="bsItem">
+                                <p>7</p>
+                            </div>
+                            <div class="bsItem">
+                                <p>17</p>
+                            </div>
+                            <div class="bsItem">
+                                <p>3</p>
+                            </div>
+                            <div class="bsItem">
+                                <p>0</p>
+                            </div>
+                            <div class="bsItem">
+                                <p><span class="ut">27</span></p>
+                            </div>
+    
+    
+    
+                        </div>
+    
+                        <!-- Scoring plays data -->
+                        <h2 class="ngHeader">Scoring Plays</h2>
+                        <ul>
+                            <li><span class="aggies">A&M</span>- 1st 11:31 Ryan Tannehill 7yd pass to Ben Malena.</li>
+                            <li><span class="aggies">A&M</span>- 1st 5:40 Randy Bullock 49yd FG. </li>
+                            <li><span class="aggies">A&M</span>- 2nd 10:50 Randy Bullock</li>
+                            <li><span class="ut">UT</span>- 2nd 9:10 Jaxon Shipley 41yd pass to Blain Irby</li>
+                            <li><span class="aggies">A&M</span>- 2nd 4:18 Randy Bullock 29yd FG</li>
+                            <li><span class="ut">UT</span>- 3rd 11:06 Carrington Byndom 58yd interception TD</li>
+                            <li><span class="ut">UT</span>- 3rd 7:44 Justin Tucker 23yd FG</li>
+                            <li><span class="ut">UT</span>- 3rd 4:04 Cody Johnson 1yd rushing TD</li>
+                            <li><span class="aggies">A&M</span>- 4th 5:56 Randy Bullock 32yd FG</li>
+                            <li><span class="aggies">A&M</span>- 4th 5:56 Ryan Tannehill 16yd pass to Jeff Fuller</li>
+                            <li><span class="ut">UT</span>- 4th 0:00 Justin Tucker 40yd FG</li>
+    
+                        </ul>
+    
+                        <div class="teamStats">
+                            <div class="tsItem">
+                                <p></p>
+                            </div>
+    
+                            <div class="tsItem">
+                                <p><span class="aggies">Aggies</span></p>
+                            </div>
+    
+                            <div class="tsItem">
+                                <p><span class="ut">UT</span></p>
+                            </div>
+    
+                            <div class="tsItem">
+                                <p>Total Yards</p>
+                            </div>
+    
+                            <div class="tsItem">
+                                <p><span class="aggies">328</span></p>
+                            </div>
+    
+                            <div class="tsItem">
+                                <p><span class="ut">237</span></p>
+                            </div>
+    
+                            <div class="tsItem">
+                                <p>Pass Yards</p>
+                            </div>
+    
+                            <div class="tsItem">
+                                <p><span class="aggies">228</span></p>
+                            </div>
+    
+                            <div class="tsItem">
+                                <p><span class="ut">161</span></p>
+                            </div>
+    
+                            <div class="tsItem">
+                                <p>Rushing Yards</p>
+                            </div>
+    
+                            <div class="tsItem">
+                                <p><span class="aggies">86</span></p>
+                            </div>
+    
+                            <div class="tsItem">
+                                <p><span class="ut">104</span></p>
+                            </div>
+    
+                            <div class="tsItem">
+                                <p>Turnovers</p>
+                            </div>
+    
+                            <div class="tsItem">
+                                <p><span class="aggies">2</span></p>
+                            </div>
+    
+                            <div class="tsItem">
+                                <p><span class="ut">4</span></p>
+                            </div>
+                            
+                            
+    
+    
+                        </div>
+
+            </div>
+</div>
+
+            <!-- =========================================== -->
+
+            <div class="ngamesbox">
+                <div class="ngitemtext">
+                    <h2 class="ngHeader"><span class="aggies">A&M</span> vs. <span class="ut">UT</span>- November 24th 2011</h2>
+                    <h2 class="ngHeader"><span class="aggies">25</span>-<span class="ut">27</span></h2>
+
+                    <h3 class="ngHeader">Background info</h3>
+                    <p class="bgi">PLaceholder text</p>
+
+                    <div class="boxscore">
+
+                        <!-- first row -->
+                        <div class="bsItem">
+                            <p>Quarter</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>1</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>2</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>3</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>4</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>OT</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>T</p>
+                        </div>
+
+                        <!-- second row -->
+                        <div class="bsItem">
+                            <p><span class="aggies">A&M</span></p>
+                        </div>
+                        <div class="bsItem">
+                            <p>10</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>6</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>0</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>9</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>0</p>
+                        </div>
+                        <div class="bsItem">
+                            <p><span class="aggies">25</span></p>
+                        </div>
+
+                        <!-- third row -->
+                        <div class="bsItem">
+                            <p><span class="ut">UT</span></p>
+                        </div>
+                        <div class="bsItem">
+                            <p>0</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>7</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>17</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>3</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>0</p>
+                        </div>
+                        <div class="bsItem">
+                            <p><span class="ut">27</span></p>
+                        </div>
+
+
+
+                    </div>
+
+                    <!-- Scoring plays data -->
+                    <h2 class="ngHeader">Scoring Plays</h2>
+                    <ul>
+                        <li><span class="aggies">A&M</span>- 1st 11:31 Ryan Tannehill 7yd pass to Ben Malena.</li>
+                        <li><span class="aggies">A&M</span>- 1st 5:40 Randy Bullock 49yd FG. </li>
+                        <li><span class="aggies">A&M</span>- 2nd 10:50 Randy Bullock</li>
+                        <li><span class="ut">UT</span>- 2nd 9:10 Jaxon Shipley 41yd pass to Blain Irby</li>
+                        <li><span class="aggies">A&M</span>- 2nd 4:18 Randy Bullock 29yd FG</li>
+                        <li><span class="ut">UT</span>- 3rd 11:06 Carrington Byndom 58yd interception TD</li>
+                        <li><span class="ut">UT</span>- 3rd 7:44 Justin Tucker 23yd FG</li>
+                        <li><span class="ut">UT</span>- 3rd 4:04 Cody Johnson 1yd rushing TD</li>
+                        <li><span class="aggies">A&M</span>- 4th 5:56 Randy Bullock 32yd FG</li>
+                        <li><span class="aggies">A&M</span>- 4th 5:56 Ryan Tannehill 16yd pass to Jeff Fuller</li>
+                        <li><span class="ut">UT</span>- 4th 0:00 Justin Tucker 40yd FG</li>
+
+                    </ul>
+
+                    <div class="teamStats">
+                        <div class="tsItem">
+                            <p></p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p><span class="aggies">Aggies</span></p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p><span class="ut">UT</span></p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p>Total Yards</p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p><span class="aggies">328</span></p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p><span class="ut">237</span></p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p>Pass Yards</p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p><span class="aggies">228</span></p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p><span class="ut">161</span></p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p>Rushing Yards</p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p><span class="aggies">86</span></p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p><span class="ut">104</span></p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p>Turnovers</p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p><span class="aggies">2</span></p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p><span class="ut">4</span></p>
+                        </div>
+                        
+                        
+
+
+                    </div>
+                    <p>For more detailed info go to the stats and records tab</P>
+
+                </div>
+                <div class="ngitemimg">
+                    <img src="https://www.dallasnews.com/resizer/mTaFhSNs_XUmqh24hK-utOX1CFs=/arc-anglerfish-arc2-prod-dmn/public/AFSXVDZRN2OX6QR2EMEECHORBY.jpg">
+                    <img src="http://1vfaoo3rihwa2hf8z21yve8u-wpengine.netdna-ssl.com/wp-content/uploads/2015/11/jwj-UT-TAMU-1610.jpg">
+                </div>
+
+
+
+                <div class="ngitemtext">
+                    <h2 class="ngHeader">A&M vs. UT- November 24th 2011</h2>
+                    <h2 class="ngHeader">25-27</h2>
+
+                    <h3 class="ngHeader">Background info</h3>
+                    <p class="bgi">PLaceholder text</p>
+
+                    <div class="boxscore">
+
+                        <!-- first row -->
+                        <div class="bsItem">
+                            <p>Quarter</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>1</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>2</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>3</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>4</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>OT</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>T</p>
+                        </div>
+
+                        <!-- second row -->
+                        <div class="bsItem">
+                            <p>Aggies</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>10</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>6</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>0</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>9</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>0</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>25</p>
+                        </div>
+
+                        <!-- third row -->
+                        <div class="bsItem">
+                            <p>UT</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>0</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>7</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>17</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>3</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>0</p>
+                        </div>
+                        <div class="bsItem">
+                            <p>27</p>
+                        </div>
+
+
+
+                    </div>
+
+                    <!-- Scoring plays data -->
+                    <h2 class="ngHeader">Scoring Plays</h2>
+                    <ul>
+                        <li>Test</li>
+                    </ul>
+
+                    <div class="teamStats">
+                        <div class="tsItem">
+                            <p></p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p>Aggies</p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p>other team</p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p>Stat 1</p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p>Data 11</p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p>Data 12</p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p>Stat 2</p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p>Data 21</p>
+                        </div>
+
+                        <div class="tsItem">
+                            <p>Data 22</p>
+                        </div>
+                        
+
+
+                    </div>
+
+                </div>
+
+                <div class="ngitemimg">
+                    <p>Test four</p>
+                </div>
+
+            </div>
+            
+            <!-- ==================================== -->
+
+        
 
     </body>
 

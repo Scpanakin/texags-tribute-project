@@ -1,15 +1,47 @@
+To-Do List
+
 Learning:
 Backend Course FCC
 Front-end Libraries FCC
 API Video
 Node.js Video
 
+< ---------------------------------------------------------- >
+
 Site-Specific
+
+General:
+Figure out positioning when pages shrink and grow
+Figure out why Animate.css won't work
 Bootstrap: See if you can get btn primary and btn to work with navigation buttons
 Make a footer
-Write an intro for index.html
-Finish Kyle Field information
-Add more coaches and players collapsibles
-Add more collapsibles for stst
 See if you can change cursor
 Make website look nicer (elaborate as you think of ideas)
+
+Index:
+Write an intro for index.html
+Fix image spacing on timeline (get rid of pixels)
+
+Kyle Field: 
+Add notable games (try flexbox)
+Finish Kyle Field information
+
+Player and Coaches:
+
+
+Stats and Records:
+
+
+< ---------------------------------------------------------- >
+
+Libraries:
+
+HTML/CSS:
+Boostrap: Responsive CSS 
+Font Awesome: Icons (webfonts and vectors)
+Animate.css: make animations
+
+JS:
+jQuery: Used to make DOM naviagtion easier
+
+
